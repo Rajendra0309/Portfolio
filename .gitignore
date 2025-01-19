@@ -1,0 +1,14 @@
+# Image directories
+/images/
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.ico
+*.webp
+*.bmp
+*.tiff
+*.psd
