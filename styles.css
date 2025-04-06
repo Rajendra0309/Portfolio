@@ -487,12 +487,44 @@ section {
     transform: translateY(-4px);
 }
 
+/* Social Icons */
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.email-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3178/3178158.png");
+}
+
+.phone-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/455/455705.png");
+}
+
+.location-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1180/1180754.png");
+}
+
+.linkedin-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3536/3536505.png");
+}
+
+.github-icon {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/733/733553.png");
+}
+
 /* Footer */
 footer {
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     background: var(--gray-light);
-    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--gray-medium);
 }
 
 /* Animations */
