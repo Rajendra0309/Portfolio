@@ -549,6 +549,44 @@ footer {
     }
 }
 
+.achievements-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.centered-achievements {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    text-align: center;
+}
+
+.centered-achievements li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-achievements li i {
+    margin-right: 10px;
+    color: var(--accent-color, #007bff);
+}
+
+.centered-certs {
+    justify-content: center;
+}
+
+.certifications-content {
+    display: flex;
+    justify-content: center;
+}
+
+.cert-card {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
