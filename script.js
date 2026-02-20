@@ -312,7 +312,7 @@ function showNotification(message, type) {
 }
 
 function typeEffect() {
-    const text = "Frontend Developer & Designer";
+    const text = "Full-Stack Developer (MERN) | Software Developer Trainee | DevOps & Cloud Enthusiast";
     const typingElement = document.querySelector('.hero p');
     
     if (!typingElement) return;
