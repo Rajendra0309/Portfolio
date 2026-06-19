@@ -237,110 +237,55 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    const formInputs = contactForm.querySelectorAll('input, textarea');
-    
-    formInputs.forEach(input => {
-        input.addEventListener('input', validateInput);
-        input.addEventListener('blur', validateInput);
-    });
-    
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        if (!validateForm()) return;
-        
-        const formData = {
-            name: document.getElementById('name').value.trim(),
-            email: document.getElementById('email').value.trim(),
-            message: document.getElementById('message').value.trim()
-        };
-    
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-    
-        submitBtn.style.transition = 'all 0.3s var(--bounce)';
-        submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
-        submitBtn.disabled = true;
-        submitBtn.classList.add('loading');
-        
-        try {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            showNotification('Message sent successfully!', 'success');
-            contactForm.reset();
-            formInputs.forEach(input => input.classList.remove('valid'));
-    
-            contactForm.classList.add('submitted');
-            setTimeout(() => contactForm.classList.remove('submitted'), 1000);
-        } catch (error) {
-            showNotification('Failed to send message. Please try again.', 'error');
-        } finally {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
-            submitBtn.classList.remove('loading');
-        }
-    });
-}
 
-function showNotification(message, type) {
-    const notification = document.createElement('div');
-    notification.className = `notification ${type}`;
-    notification.setAttribute('role', 'alert');
-    notification.innerHTML = `
-        <div class="notification-content">
-            <span class="notification-icon"></span>
-            <span class="notification-message">${message}</span>
-        </div>
-    `;
-    
-    notification.style.animation = 'slideIn 0.4s var(--bounce)';
-    document.body.appendChild(notification);
-    
-    setTimeout(() => notification.classList.add('showing'), 10);
-    
-    const dismissTimeout = setTimeout(() => {
-        notification.style.animation = 'slideOut 0.4s var(--bounce)';
-        setTimeout(() => notification.remove(), 400);
-    }, 5000);
-    
-    notification.addEventListener('click', () => {
-        clearTimeout(dismissTimeout);
-        notification.style.animation = 'slideOut 0.4s var(--bounce)';
-        setTimeout(() => notification.remove(), 400);
-    });
-}
 
 function typeEffect() {
-    const text = "Full-Stack Developer (MERN) | Software Developer Trainee | DevOps & Cloud Enthusiast";
-    const typingElement = document.querySelector('.hero p');
+    const roles = [
+        "MERN Stack Developer",
+        "Cloud & DevOps Enthusiast",
+        "Backend Developer",
+        "Problem Solver"
+    ];
+    const typingElement = document.querySelector('.typing-text');
     
     if (!typingElement) return;
     
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        typingElement.textContent = text;
+        typingElement.textContent = roles[0];
         return;
     }
     
-    let i = 0;
-    typingElement.textContent = '';
-    typingElement.setAttribute('aria-label', text);
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
     
     function type() {
-        if (i < text.length) {
-            typingElement.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, Math.random() * 50 + 50);
+        const currentRole = roles[roleIndex];
+        
+        if (isDeleting) {
+            typingElement.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+            typingSpeed = 50;
         } else {
-            typingElement.classList.add('typed');
-            const cursor = document.createElement('span');
-            cursor.className = 'typing-cursor';
-            cursor.innerHTML = '|';
-            typingElement.appendChild(cursor);
+            typingElement.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+            typingSpeed = Math.random() * 50 + 50;
         }
+        
+        if (!isDeleting && charIndex === currentRole.length) {
+            isDeleting = true;
+            typingSpeed = 2000;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            typingSpeed = 500;
+        }
+        
+        setTimeout(type, typingSpeed);
     }
     
-    requestAnimationFrame(() => setTimeout(type, 800));
+    setTimeout(type, 1000);
 }
 
 if (document.readyState === 'loading') {
@@ -399,32 +344,7 @@ function handleParallaxEffects() {
 
 handleParallaxEffects();
 
-function validateInput(e) {
-    const input = e.target;
-    const value = input.value.trim();
-    const isValid = input.checkValidity();
-    
-    input.classList.toggle('valid', isValid && value.length > 0);
-    input.classList.toggle('invalid', !isValid && value.length > 0);
 
-    const errorElement = input.parentElement.querySelector('.error-message');
-    if (errorElement) {
-        errorElement.textContent = input.validationMessage;
-        errorElement.style.display = !isValid && value.length > 0 ? 'block' : 'none';
-    }
-}
-
-function validateForm() {
-    let isValid = true;
-    const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
-    formInputs.forEach(input => {
-        if (!input.checkValidity()) {
-            isValid = false;
-            input.classList.add('invalid');
-        }
-    });
-    return isValid;
-}
 
 function trapFocus(element) {
     const focusableElements = element.querySelectorAll(
@@ -570,3 +490,25 @@ function createCursorEffect() {
 if (window.innerWidth > 768) {
     createCursorEffect();
 }
+
+
+
+// Experience Accordion Logic
+const experienceHeaders = document.querySelectorAll('.toggle-experience');
+
+experienceHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        
+        const isExpanded = body.classList.contains('expanded');
+        
+        // Optional: Close all others first
+        document.querySelectorAll('.experience-body.collapsible').forEach(b => b.classList.remove('expanded'));
+        document.querySelectorAll('.toggle-experience').forEach(h => h.classList.remove('active'));
+        
+        if (!isExpanded) {
+            header.classList.add('active');
+            body.classList.add('expanded');
+        }
+    });
+});

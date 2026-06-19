@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Portfolio of Rajendra Guttedar - Information Science Engineering Student specializing in web development and software engineering.">
+    <meta name="description"
+        content="Portfolio of Rajendra Guttedar - Software developer with hands-on experience building full-stack web applications, cloud-enabled solutions, automation workflows, and AI-powered projects.">
     <title>Rajendra Guttedar - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://i.postimg.cc/VLp7dJnZ/me.jpg" type="image/jpeg">
@@ -11,14 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">RG</div>
         <div class="nav-links">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
             <a href="#achievements">Achievements</a>
             <a href="#certifications">Certifications</a>
@@ -34,12 +39,17 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="reveal-text">Hello, I'm <span class="highlight">Rajendra Guttedar</span></h1>
-            <p class="reveal-text hero-subtitle">Aspiring Full-Stack Developer | Final Year Student</p>
-            <p class="hero-tagline">Building scalable solutions with modern technologies</p>
+            <p class="reveal-text hero-subtitle">MERN Stack Developer | Cloud & DevOps Enthusiast</p>
+            <p class="hero-typing reveal-text"><span class="typing-text"></span><span class="typing-cursor">|</span></p>
+            <p class="hero-tagline">Building scalable web applications, cloud-native solutions, and automated deployment
+                pipelines with modern development and DevOps practices.</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn primary">View Projects</a>
+                <a href="https://github.com/Rajendra0309" target="_blank" rel="noopener" class="btn secondary">Download
+                    Resume</a>
                 <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
+
         </div>
         <div class="scroll-indicator">
             <div class="mouse"></div>
@@ -51,150 +61,340 @@
         <h2 class="section-title" data-aos="fade-up">About Me</h2>
         <div class="about-content">
             <div class="about-text" data-aos="fade-right" data-aos-delay="200">
-                <p>I'm a final-year Information Science and Engineering student at Dayananda Sagar Academy of Technology and Management, Bengaluru (CGPA: 8.71/10). I have a strong foundation in software development and modern web technologies.</p>
-                <p>Recently completed an AI & Cloud Internship at AICTE – Edunet Foundation with IBM SkillsBuild, where I built an AI-powered Research Assistant using IBM Watsonx Agent Lab and deployed it on IBM Cloud.</p>
-                <p>I'm passionate about learning and building practical solutions. Proficient in MERN stack development, familiar with DevOps practices, CI/CD workflows, and cloud platforms. Actively seeking opportunities to apply my skills in a professional environment.</p>
-                <div class="skills">
-                    <div class="skill">Java</div>
-                    <div class="skill">Python</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">HTML5</div>
-                    <div class="skill">CSS3</div>
-                    <div class="skill">Golang (Basics)</div>
-                    <div class="skill">MongoDB</div>
-                    <div class="skill">React.js</div>
-                    <div class="skill">Node.js</div>
-                    <div class="skill">Express.js</div>
-                    <div class="skill">Docker</div>
-                    <div class="skill">GitHub Actions</div>
-                    <div class="skill">AWS</div>
-                    <div class="skill">IBM Cloud</div>
-                    <div class="skill">Bootstrap</div>
-                    <div class="skill">REST APIs</div>
-                    <div class="skill">CI/CD</div>
-                    <div class="skill">Linux</div>
+                <p>I am an Information Science Engineering graduate and software developer passionate about building
+                    scalable full-stack web applications and cloud-enabled solutions. With a CGPA of 8.88/10 and
+                    hands-on experience in MERN stack, cloud computing, and CI/CD practices, I have honed my skills
+                    through internships, apprenticeships, and hackathons. I thrive on solving complex problems and
+                    continuously expanding my knowledge in modern software engineering and DevOps.</p>
+                <div class="skills-container" style="margin-top: 2rem;">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skills" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java" />
+                            <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" />
+                            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" title="JavaScript" />
+                            <img src="https://skillicons.dev/icons?i=go" alt="Go" title="Go" />
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skills" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <img src="https://skillicons.dev/icons?i=html" alt="HTML5" title="HTML5" />
+                            <img src="https://skillicons.dev/icons?i=css" alt="CSS3" title="CSS3" />
+                            <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" />
+                            <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS"
+                                title="Tailwind CSS" />
+                            <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" title="Bootstrap" />
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skills" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js" />
+                            <img src="https://skillicons.dev/icons?i=express" alt="Express.js" title="Express.js" />
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skills" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" />
+                            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" />
+                            <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase" />
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skills" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <img src="https://skillicons.dev/icons?i=aws" alt="AWS" title="AWS" />
+                            <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" title="Kubernetes" />
+                            <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" />
+                            <i class="devicon-vagrant-plain colored" style="font-size: 48px; line-height: 48px;" title="Vagrant"></i>
+                            <img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins" title="Jenkins" />
+                            <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx" title="Nginx" />
+                            <img src="https://skillicons.dev/icons?i=linux" alt="Linux" title="Linux" />
+                            <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" />
+                            <img src="https://skillicons.dev/icons?i=bash" alt="Bash" title="Bash" />
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skills" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <img src="https://skillicons.dev/icons?i=github" alt="GitHub" title="GitHub" />
+                            <img src="https://skillicons.dev/icons?i=postman" alt="Postman" title="Postman" />
+                            <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" title="VS Code" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="about-image" data-aos="fade-left" data-aos-delay="300">
                 <img src="https://i.postimg.cc/VLp7dJnZ/me.jpg" alt="Profile Picture" class="float-animation">
                 <div class="social-overlay">
-                    <a href="https://www.linkedin.com/in/rajendra0309/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Rajendra0309" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rajendra0309/" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Rajendra0309" target="_blank" rel="noopener"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title" data-aos="fade-up">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="experience-header toggle-experience">
+                    <div class="header-content" style="display: flex; gap: 15px; align-items: center;">
+                        <div class="company-logo"
+                            style="background:#fff; border:1px solid #e2e8f0; width:48px; height:48px; min-width:48px; display:flex; align-items:center; justify-content:center; border-radius:12px; overflow:hidden;">
+                            <img src="https://play-lh.googleusercontent.com/vQ3QFDFr0GgG9g1t0F66DKhbe2LcBdPu3AFUT9VTMoj5emLyK0m3Zxvn_NGr0CQvItzY6UnOQXtj_EYhP3Q_qhQ"
+                                style="width:100%; height:100%; object-fit:contain;" alt="CBA">
+                        </div>
+                        <div>
+                            <h3>Software Developer Trainee (Apprenticeship)</h3>
+                            <h4>CBA Services Private Limited</h4>
+                            <span class="duration">January 2026 – July 2026 (6 Months)</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon-container"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="experience-body collapsible">
+                    <ul>
+                        <li>Collaborated in a 5-member Agile team to develop full-stack web applications.</li>
+                        <li>Participated in application development, API integration, testing, and deployment
+                            activities.</li>
+                        <li>Worked on cloud deployment, CI/CD implementation, and DevOps workflows.</li>
+                        <li>Contributed to sprint planning, code reviews, documentation, and requirement analysis.</li>
+                        <li>Assisted in integrating frontend and backend components while following software development
+                            best practices.</li>
+                    </ul>
+                    <div class="major-contributions">
+                        <strong>Major Contributions:</strong>
+                        <ul>
+                            <li>Developed and integrated features for enterprise-scale web applications as part of a
+                                collaborative development team.</li>
+                            <li>Worked with AWS cloud services and Docker-based deployment workflows.</li>
+                            <li>Implemented and supported CI/CD pipelines using GitHub Actions.</li>
+                            <li>Contributed to application deployment, testing, debugging, and performance improvements.
+                            </li>
+                            <li>Gained hands-on experience in Agile development, version control, cloud infrastructure,
+                                and DevOps practices.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech experience-tech">
+                        <span>React.js</span><span>Node.js</span><span>Express.js</span><span>JavaScript</span><span>MongoDB</span><span>AWS</span><span>Docker</span><span>Git</span><span>GitHub</span><span>GitHub
+                            Actions</span><span>CI/CD</span><span>Linux</span><span>REST APIs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="experience-header toggle-experience">
+                    <div class="header-content" style="display: flex; gap: 15px; align-items: center;">
+                        <div class="company-logo"
+                            style="background:#fff; border:1px solid #e2e8f0; width:48px; height:48px; min-width:48px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+                                style="width:80%; object-fit:contain;" alt="IBM">
+                        </div>
+                        <div>
+                            <h3>AI & Cloud Intern</h3>
+                            <h4>AICTE Edunet Foundation | IBM SkillsBuild</h4>
+                            <span class="duration">Internship</span>
+                        </div>
+                    </div>
+                    <div class="toggle-icon-container"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="experience-body collapsible">
+                    <ul>
+                        <li>Built an AI-powered Research Agent using IBM Watsonx Agent Lab.</li>
+                        <li>Developed intelligent information retrieval workflows.</li>
+                        <li>Worked on cloud deployment concepts.</li>
+                        <li>Built AI-assisted research solutions.</li>
+                        <li>Gained practical exposure to cloud and AI technologies.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
         <div class="project-grid">
-            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500" alt="Campus Connect">
+            <!-- 1. Blockchain-Based Fake Product Identification System -->
+            <div class="project-card" data-category="blockchain" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500"
+                    alt="Blockchain Fake Product Detection">
                 <div class="project-info">
-                    <h3>Campus Connect</h3>
-                    <p>A MERN stack college community portal for resource sharing, forums, marketplace, and event organization with JWT authentication and Docker-based CI/CD.</p>
+                    <h3>Blockchain Fake Product Identification</h3>
+                    <p>Blockchain and AI-powered counterfeit product detection platform that enables manufacturers and
+                        consumers to verify product authenticity using QR codes, smart contracts, and AI-based image
+                        verification.</p>
                     <div class="project-tech">
-                        <span>React.js</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                        <span>Docker</span>
-                        <span>GitHub Actions</span>
+                        <span>Solidity</span><span>React</span><span>Python</span><span>Flask</span><span>Blockchain</span><span>AI</span>
                     </div>
-                    <a href="https://github.com/Rajendra0309/Campus-Connect" target="_blank" rel="noopener" class="btn">View Project</a>
+                    <a href="https://github.com/Rajendra0309/Blockchain-Fake-Product-Detection-Enhanced-By-AI"
+                        target="_blank" rel="noopener" class="btn">View Project</a>
                 </div>
             </div>
-            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+            <!-- 2. RaktBandhan AI -->
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=500" alt="RaktBandhan AI">
+                <div class="project-info">
+                    <h3>RaktBandhan AI</h3>
+                    <p>AI-powered blood coordination platform developed for the AI For Good 2.0 Hackathon. Designed to
+                        automate donor matching, recurring transfusion scheduling, patient management, and
+                        administrative workflows.</p>
+                    <div class="project-tech">
+                        <span>React</span><span>FastAPI</span><span>AWS</span><span>DynamoDB</span><span>Lambda</span><span>Amazon
+                            Bedrock</span><span>TailwindCSS</span>
+                    </div>
+                    <a href="https://github.com/siddarammanur656/RaktBandhan-AI" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- 3. Campus Connect -->
+            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500" alt="Campus Connect">
+                <div class="project-info">
+                    <h3>Campus Connect</h3>
+                    <p>A college community platform that enables students to connect, share updates, manage events, and
+                        improve communication within the campus ecosystem.</p>
+                    <div class="project-tech">
+                        <span>MERN Stack</span>
+                    </div>
+                    <a href="https://github.com/Rajendra0309/Campus-Connect" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- 4. RevBookMyShow -->
+            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500" alt="RevBookMyShow">
+                <div class="project-info">
+                    <h3>RevBookMyShow</h3>
+                    <p>Full-stack movie ticket booking platform featuring movie listings, seat selection, user
+                        authentication, booking management, and responsive user experience.</p>
+                    <div class="project-tech">
+                        <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/Rajendra0309/Rev-BookMyShow" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- 5. AI YouTube Video Summarizer -->
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500"
+                    alt="AI YouTube Video Summarizer">
+                <div class="project-info">
+                    <h3>AI YouTube Video Summarizer</h3>
+                    <p>AI-powered application that extracts and summarizes YouTube video content using Generative AI,
+                        helping users quickly understand lengthy videos.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Streamlit</span><span>Gemini API</span>
+                    </div>
+                    <a href="https://github.com/Rajendra0309/ai-youtube-video-summarizer" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- 6. IBM Watsonx Research Agent -->
+            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="600">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500"
+                    alt="IBM Watsonx Research Agent">
+                <div class="project-info">
+                    <h3>IBM Watsonx Research Agent</h3>
+                    <p>Intelligent research assistant built during the IBM SkillsBuild Internship using IBM Watsonx
+                        Agent Lab and cloud technologies.</p>
+                    <div class="project-tech">
+                        <span>Python</span><span>IBM Watsonx</span><span>AI</span>
+                    </div>
+                    <a href="https://github.com/Rajendra0309/IBM-Cloud-Project-Research-AI-Agent" target="_blank"
+                        rel="noopener" class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- 7. Library Management System -->
+            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="700">
+                <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=500"
+                    alt="Library Management System">
+                <div class="project-info">
+                    <h3>Library Management System</h3>
+                    <p>Full-stack library management platform for managing books, users, borrowing, returns, inventory
+                        tracking, and administrative operations. <br /><br /><strong>Status:</strong> Currently In
+                        Development</p>
+                    <div class="project-tech">
+                        <span>MERN Stack</span>
+                    </div>
+                    <a href="#" class="btn" style="pointer-events: none; opacity: 0.6;">In Development</a>
+                </div>
+            </div>
+            <!-- 8. Cloud Cost Analyzer -->
+            <div class="project-card" data-category="cloud" data-aos="fade-up" data-aos-delay="800">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Cloud Cost Analyzer">
+                <div class="project-info">
+                    <h3>Cloud Cost Analyzer</h3>
+                    <p>Cloud cost monitoring and analytics platform designed to help users understand, visualize, and
+                        optimize cloud spending.</p>
+                    <div class="project-tech">
+                        <span>AWS</span><span>Python</span><span>Analytics</span>
+                    </div>
+                    <a href="https://github.com/Rajendra0309/cloud-cost-analyzer" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
+                </div>
+            </div>
+            <!-- 9. Wanderlust -->
+            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="900">
                 <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500" alt="Wanderlust">
                 <div class="project-info">
                     <h3>Wanderlust</h3>
-                    <p>Full-stack travel accommodation platform with Node.js, Express, MongoDB, Passport.js authentication, Mapbox integration, and Cloudinary storage.</p>
+                    <p>Travel and accommodation platform inspired by modern booking applications with responsive UI and
+                        dynamic property listings.</p>
                     <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>MongoDB</span>
-                        <span>Passport.js</span>
-                        <span>Mapbox</span>
+                        <span>Node.js</span><span>Express</span><span>MongoDB</span>
                     </div>
-                    <a href="https://github.com/Rajendra0309/Wanderlust" target="_blank" rel="noopener" class="btn">View Project</a>
+                    <a href="https://github.com/Rajendra0309/Wanderlust" target="_blank" rel="noopener" class="btn">View
+                        Project</a>
                 </div>
             </div>
-            <div class="project-card" data-category="devops" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500" alt="App Health Deployment Tracker">
+            <!-- 10. App Health Deployment Tracker -->
+            <div class="project-card" data-category="devops" data-aos="fade-up" data-aos-delay="1000">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500"
+                    alt="App Health Deployment Tracker">
                 <div class="project-info">
                     <h3>App Health Deployment Tracker</h3>
-                    <p>Node.js application health tracker with automated CI/CD using GitHub Actions, Docker, and AWS EC2. Demonstrates deployment automation and cloud infrastructure management.</p>
+                    <p>Application monitoring and deployment tracking solution for maintaining deployment visibility and
+                        operational health.</p>
                     <div class="project-tech">
-                        <span>Node.js</span>
-                        <span>Docker</span>
-                        <span>GitHub Actions</span>
-                        <span>AWS EC2</span>
+                        <span>Node.js</span><span>Docker</span><span>AWS</span>
                     </div>
-                    <a href="https://github.com/Rajendra0309/app-health-deployment-tracker" target="_blank" rel="noopener" class="btn">View Project</a>
+                    <a href="https://github.com/Rajendra0309/app-health-deployment-tracker" target="_blank"
+                        rel="noopener" class="btn">View Project</a>
                 </div>
             </div>
-            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="400">
-                <img src="https://cdn.prod.website-files.com/6462655e6f1811aabe80d8bd/663cb5b1f782414f80b98655_5%20best%20YouTube%20video%20summarizer%20AI%20tools-1.png" alt="AI YouTube Video Summarizer">
-                <div class="project-info">
-                    <h3>AI YouTube Video Summarizer</h3>
-                    <p>Transform YouTube videos into concise summaries, detailed timestamps, and accurate transcripts using Google Gemini AI. Supports 34+ languages.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Streamlit</span>
-                        <span>Gemini API</span>
-                    </div>
-                    <a href="https://github.com/Rajendra0309/ai-youtube-video-summarizer" target="_blank" rel="noopener" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card" data-category="ai" data-aos="fade-up" data-aos-delay="500">
-                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500" alt="IBM Cloud Research AI Agent">
-                <div class="project-info">
-                    <h3>IBM Cloud Research AI Agent</h3>
-                    <p>A no-code Research AI Agent built using IBM Watsonx Agent Lab and LLaMA-3-70B-instruct. Summarizes papers, generates hypotheses, drafts reports, and formats citations.</p>
-                    <div class="project-tech">
-                        <span>IBM Watsonx</span>
-                        <span>LLaMA-3</span>
-                        <span>IBM Cloud</span>
-                    </div>
-                    <a href="https://github.com/Rajendra0309/IBM-Cloud-Project-Research-AI-Agent" target="_blank" rel="noopener" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
-                <img src="https://i.postimg.cc/4yj4S3nG/fooddelivery-app.png" alt="Food Delivery React App">
+            <!-- 11. Food Delivery React App -->
+            <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="1100">
+                <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?w=500"
+                    alt="Food Delivery React App">
                 <div class="project-info">
                     <h3>Food Delivery React App</h3>
-                    <p>A responsive React-based food delivery web application that allows users to browse restaurants, view menus, add items to cart, and complete orders.</p>
+                    <p>Responsive food ordering platform built using React with dynamic menu management and
+                        user-friendly interface.</p>
                     <div class="project-tech">
-                        <span>React 18</span>
-                        <span>JavaScript</span>
-                        <span>CSS</span>
+                        <span>React</span><span>JavaScript</span><span>CSS</span>
                     </div>
-                    <a href="https://github.com/Rajendra0309/Food-Delivery-React" target="_blank" rel="noopener" class="btn">View Project</a>
+                    <a href="https://github.com/Rajendra0309/Food-Delivery-React" target="_blank" rel="noopener"
+                        class="btn">View Project</a>
                 </div>
             </div>
-            <div class="project-card" data-category="devops" data-aos="fade-up" data-aos-delay="700">
-                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=500" alt="CI Docker Compose Validation">
+            <!-- 12. CI/CD Docker Compose Validation -->
+            <div class="project-card" data-category="devops" data-aos="fade-up" data-aos-delay="1200">
+                <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?w=500"
+                    alt="CI Docker Compose Validation">
                 <div class="project-info">
                     <h3>CI/CD Docker Compose Validation</h3>
-                    <p>CI/CD pipeline demonstrating automated Docker Compose validation with fail-fast behavior using GitHub Actions. Validates multi-container application health checks.</p>
+                    <p>CI/CD validation workflow demonstrating Docker Compose integration, automation, and deployment
+                        verification processes.</p>
                     <div class="project-tech">
-                        <span>Docker</span>
-                        <span>GitHub Actions</span>
-                        <span>Docker Compose</span>
+                        <span>Docker</span><span>GitHub Actions</span><span>CI/CD</span>
                     </div>
-                    <a href="https://github.com/Rajendra0309/ci-docker-compose-validation" target="_blank" rel="noopener" class="btn">View Project</a>
-                </div>
-            </div>
-            <div class="project-card" data-category="blockchain" data-aos="fade-up" data-aos-delay="800">
-                <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=500" alt="Blockchain Fake Product Detection">
-                <div class="project-info">
-                    <h3>Blockchain Fake Product Detection</h3>
-                    <p>Blockchain-based system enhanced with AI for detecting fake products and ensuring supply chain authenticity.</p>
-                    <div class="project-tech">
-                        <span>Blockchain</span>
-                        <span>AI/ML</span>
-                        <span>Smart Contracts</span>
-                    </div>
-                    <a href="https://github.com/Rajendra0309/Blockchain-Fake-Product-Detection-Enhanced-By-AI" target="_blank" rel="noopener" class="btn">View Project</a>
+                    <a href="https://github.com/Rajendra0309/ci-docker-compose-validation" target="_blank"
+                        rel="noopener" class="btn">View Project</a>
                 </div>
             </div>
         </div>
@@ -205,9 +405,18 @@
         <div class="achievements-container">
             <div class="achievements-content" data-aos="fade-up" data-aos-delay="200">
                 <ul class="centered-achievements">
-                    <li data-aos="fade-right" data-aos-delay="300"><i class="fas fa-trophy"></i> Galactic Problem Solver Certificate - NASA SpaceApps Challenge 2024</li>
-                    <li data-aos="fade-right" data-aos-delay="400"><i class="fas fa-medal"></i> Finalist - JITHACK'24 Hackathon (Designed predictive model with 85% accuracy)</li>
-                    <li data-aos="fade-right" data-aos-delay="500"><i class="fas fa-award"></i> Secured 5th place - NEOPAT Codeathon 2024</li>
+                    <li data-aos="fade-right" data-aos-delay="300"><i class="fas fa-trophy"></i> NASA SpaceApps
+                        Challenge 2024 – Galactic Problem Solver Certificate</li>
+                    <li data-aos="fade-right" data-aos-delay="400"><i class="fas fa-medal"></i> Finalist – JITHACK'24
+                        Hackathon</li>
+                    <li data-aos="fade-right" data-aos-delay="500"><i class="fas fa-award"></i> Secured 5th Place –
+                        NEOPAT Codeathon 2024</li>
+                    <li data-aos="fade-right" data-aos-delay="600"><i class="fas fa-cloud"></i> NPTEL Cloud Computing –
+                        Elite + Top 5%</li>
+                    <li data-aos="fade-right" data-aos-delay="700"><i class="fas fa-users"></i> Participant – AI For
+                        Good 2.0 Hackathon</li>
+                    <li data-aos="fade-right" data-aos-delay="800"><i class="fas fa-certificate"></i> IBM SkillsBuild
+                        Internship Completion</li>
                 </ul>
             </div>
         </div>
@@ -218,19 +427,22 @@
         <div class="certifications-container">
             <div class="certifications-content">
                 <div class="cert-grid">
-                    <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S104220228104247303.pdf" target="_blank" rel="noopener" class="cert-card" data-aos="zoom-in-up" data-aos-delay="100">
+                    <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S104220228104247303.pdf"
+                        target="_blank" rel="noopener" class="cert-card" data-aos="zoom-in-up" data-aos-delay="100">
                         <div class="cert-icon"><i class="fas fa-cloud"></i></div>
                         <h3>Cloud Computing</h3>
                         <p>NPTEL - IIT Kharagpur</p>
                         <span class="cert-credential">ID: NPTEL25CS11S1042202281</span>
                         <span class="cert-badge">Elite • Top 5%</span>
                     </a>
-                    <a href="https://moonshot.scaler.com/s/sl/XhTPJfr8il" target="_blank" rel="noopener" class="cert-card" data-aos="zoom-in-up" data-aos-delay="200">
+                    <a href="https://moonshot.scaler.com/s/sl/XhTPJfr8il" target="_blank" rel="noopener"
+                        class="cert-card" data-aos="zoom-in-up" data-aos-delay="200">
                         <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
                         <h3>Computer Networks</h3>
                         <p>Scaler</p>
                     </a>
-                    <a href="https://certificate.hack2skill.com/user/gdgscsubmissions/2025H2S01GSC-I08059" target="_blank" rel="noopener" class="cert-card" data-aos="zoom-in-up" data-aos-delay="300">
+                    <a href="https://certificate.hack2skill.com/user/gdgscsubmissions/2025H2S01GSC-I08059"
+                        target="_blank" rel="noopener" class="cert-card" data-aos="zoom-in-up" data-aos-delay="300">
                         <div class="cert-icon"><i class="fab fa-google"></i></div>
                         <h3>GDG on Campus Solution Challenge</h3>
                         <p>Google Developers Group</p>
@@ -258,13 +470,19 @@
                     <p>Bengaluru, India</p>
                 </div>
                 <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-                    <a href="https://www.linkedin.com/in/rajendra0309/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                    <a href="https://www.linkedin.com/in/rajendra0309/" class="social-link" target="_blank"
+                        rel="noopener" aria-label="LinkedIn Profile">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/Rajendra0309" class="social-link" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                    <a href="https://github.com/Rajendra0309" class="social-link" target="_blank" rel="noopener"
+                        aria-label="GitHub Profile">
                         <i class="fab fa-github"></i>
                         <span>GitHub</span>
+                    </a>
+                    <a href="https://github.com/Rajendra0309" class="btn primary" target="_blank" rel="noopener"
+                        style="margin-left: auto;">
+                        <i class="fas fa-download" style="margin-right: 8px;"></i> Download Resume
                     </a>
                 </div>
             </div>
@@ -282,4 +500,5 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
+
 </html>
