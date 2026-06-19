@@ -32,8 +32,18 @@ body {
     line-height: 1.7;
     color: var(--text-color);
     overflow-x: hidden;
-    background-color: var(--bg-color);
     scroll-behavior: smooth;
+    background-color: #ffffff;
+    background-image: 
+        radial-gradient(at 40% 20%, hsla(28,100%,74%,0.2) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(189,100%,56%,0.2) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355,100%,93%,0.5) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(340,100%,76%,0.2) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(22,100%,77%,0.2) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, hsla(242,100%,70%,0.2) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, hsla(343,100%,76%,0.2) 0px, transparent 50%);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1564,4 +1574,13 @@ footer {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+/* Overrides to ensure mesh gradient is visible everywhere */
+.hero, .about, .experience, .projects, .achievements, .certifications, .contact {
+    background: transparent !important;
+}
+.navbar {
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
 }
